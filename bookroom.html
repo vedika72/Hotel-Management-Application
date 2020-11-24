@@ -6,7 +6,13 @@
 <link rel="stylesheet" type="text/css" href="dhtmlxcalendar.css"/>
 	
 <script src="dhtmlxcalendar.js"></script>
-	
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>	
 <style>
 		#calendar,
 		#calendar2,
@@ -94,8 +100,8 @@
 	<div id="a1">
     <p>&nbsp;</p>
     
-    <form action="book.php" method="post">
-		 <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <form action="bookroom.php" href="dash.html" method="post">
+		<label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     			<input id="name" name="name" placeholder="Full Name" required="" tabindex="1" type="text"><br><br>
 		
 		<label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -103,6 +109,7 @@
 		
 		<label for="mobile">Mobile No:</label> &nbsp;
             		<input id="phone" name="mobile" placeholder="Number" required="" type="text"> <br><br>
+            		
 		
 		<div style="position:relative;height:80px;">
 		
@@ -124,8 +131,12 @@
 				<option value="three">Three</option>
 			</select>
 		<br/><br/><br/>
-<a href="payment.html"><input type="submit" name="submit" value="Book"/></a>
+<a href="book.html"><input type="submit" name="submit" value="Book"/></a>
 <input type="reset" name="reset" value="Reset" />
+</form>
+<form action="uploadroom.php" method="post" enctype="multipart/form-data">
+  					<input type="file" name="fileToUpload" id="fileToUpload">
+    				<input type="submit" value="Upload Image" name="submit">
 </form>
     </div><!--a1-->
 </div><!--book--> 
