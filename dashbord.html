@@ -8,11 +8,16 @@
 <script src="dhtmlxcalendar.js"></script>
 
 <style>
+
+body {
+	background-image: url('C:/Users/HP/Downloads/Hotel-management-system/Hotel management system/images/11.jpg');
+}
 .btns {
-	background-color: #896633; /* Green background */
-  border: 1px solid #896633; /* Green border */
+	background-color: #896633;
+  border: 1px solid #896633;
   color: white; /* White text */
-	font-size: 20px;
+	font-size: 25px;
+	background-image: url('C:/Users/HP/Downloads/Hotel-management-system/Hotel management system/images/11.jpg');
 
 }
 .btn-group button {
@@ -24,7 +29,6 @@
   padding: 75px 200px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
 	float: left;
-
 }
 
 .btn-group button:not(:last-child) {
@@ -35,31 +39,50 @@
 .btn-group button:hover {
   background-color: #896633;
 	color: white;
+	background-image: url('C:/Users/HP/Downloads/Hotel-management-system/Hotel management system/images/11.jpg');
 }
-</style>
 
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px
+	left: 50%;
+  top: 50%;
+}
+
+
+</style>
 
 <body>
 	<div>
 		<button class="btns">Customer Dashboard</button>
 	</div>
-
+<div class='center'>
 	<div class="btn-group" style="width:100%">
 		<button style="width:33.3%" onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/book.html'">Book Room</button>
 		<button style="width:33.3%" onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/book.html'">Book Event</button>
 		<button style="width:33.3%" onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/rest/menu.html'">Order Food</button>
-	</div>
 
-	<div class="btn-group" style="width:100%">
-		<button style="width:33.3%">Room Service</button>
-		<button style="width:33.3%">Other Facilities</button>
-		<button style="width:33.3%">View Gallery</button>
-	</div>
-
-	<div class="btn-group" style="width:100%">
 		<button style="width:33.3%">Drop Review</button>
 		<button style="width:33.3%">Prepare Checkout</button>
 		<button style="width:33.3%" onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/overview.html'">Contact Us</button>
 	</div>
+
+	<!--
+	<div class="btn-group" style="width:100%">
+		<button onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/book.html'">Book Room</button>
+		<button onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/book.html'">Book Event</button>
+		<button onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/rest/menu.html'">Order Food</button>
+	</div>
+
+
+
+	<div class="btn-group" style="width:100%">
+		<button >Drop Review</button>
+		<button >Prepare Checkout</button>
+		<button onclick="location.href='file:///C:/Users/HP/Downloads/Hotel-management-system/Hotel%20management%20system/overview.html'">Contact Us</button>
+	</div>
+-->
+</div>
 </body>
 </html>
